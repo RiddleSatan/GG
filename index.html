@@ -4,10 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Esports Web</title>
+  <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+ <style>
+  .card-large {
+    display: block;}
+    .card-small {
+    display: none;}
+  @media (max-width:767px) { 
+    .card-small{
+      
+      display: block;
+    }
+    .card-large{
+      display: none;
+    }
+   }
+ </style>
 </head>
 
 <body>
@@ -55,20 +69,58 @@
     </div>
   </nav>
 
-  <div class=" d-flex justify-content-center jumbotron p-3 p-md-5 text-white rounded bg-dark "
-    style="position: relative;">
-    <img src="img/2ndoe.jpg" alt=""
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+  
+  <div class=" d-flex justify-content-center jumbotron p-3 p-md-5 text-white rounded bg-dark ">
     <div class="col-md-6 px-0">
       <h1 class="display-4 font-italic">Step into the New world of Gaming with the best Gears in the market</h1>
-      <p class="lead my-3">Whether you’re a fan of shooters, MOBAs, fighting games, or card games, there’s always an esports
+      <p class="lead my-3">Whether you’re a fan of shooters, MOBAs, fighting games, or card games, there’s an esports
         scene for you. Discover the most popular esports games and how to watch the best players compete for glory</p>
       <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
     </div>
   </div>
-  <div class="container my-4">
-    <div class="row mb-2">
-      <div class="col-md-6">
+ 
+   <div class="container my-4 ">
+     <div class="row mb-2">
+
+       
+       <!-- these are the small cards for small screen devices -->
+      <div class="card-small mb-3" style="width: 18rem;">
+        <img src="img/vct-masters.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">VCT Masters</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">go to nowhere :D</a>
+        </div>
+      </div>
+      <div class="card-small mb-3 " style="width: 18rem;">
+        <img src="img/thumnail2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Stack with your Friends</h5>
+          <p class="card-text">We come from a range of esports, sports, and competitive gaming career backgrounds, but
+            all of us are huge fans of playing and watching FPS games</p>
+          <a href="#" class="btn btn-primary">go to nowhere :D</a>
+        </div>
+      </div>
+      <div class="card-small mb-3" style="width: 18rem;">
+        <img src="img/thumnail1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sentinals</h5>
+          <p class="card-text">Former VCT Masters Champion ! The first to win the Cup</p>
+          <a href="#" class="btn btn-primary">go to nowhere :D</a>
+        </div>
+      </div>
+      <div class="card-small mb-3" style="width: 18rem;">
+        <img src="img/tokyo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">VCT-Tokyo</h5>
+          <p class="card-text">The VCT 2023 Masters Tokyo will take place from 11th to 25th June with 12 of the best
+            teams from across the world going against each other.</p>
+          <a href="#" class="btn btn-primary">go to nowhere :D</a>
+        </div>
+      </div>
+     
+       <!-- these are the larger card for the large screen devices -->
+     <div class="col-md-6 card-large">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary-emphasis">E-sports</strong>
@@ -83,12 +135,12 @@
               </svg>
             </a>
           </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="img/vct-masters.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+          <div class="col-auto d-none d-lg-block position-relative">
+            <img src="img/vct-masters.jpg" class=" bd-placeholder-img img-fluid" width="200" height="250" alt="">
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
+      </div> 
+      <div class="col-md-6 card-large">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-success-emphasis">Team</strong>
@@ -108,18 +160,17 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div> 
+  </div> 
   <div class="container my-4">
     <div class="row mb-2">
-      <div class="col-md-6">
+      <div class="col-md-6 card-large">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary-emphasis">E-sports</strong>
             <h3 class="mb-0">Sentinals</h3>
             <div class="mb-1 text-body-secondary">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
+            <p class="card-text mb-auto">Former VCT Masters Champion ! The first to win the Cup </p>
             <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
               Continue reading
               <svg class="bi">
@@ -132,7 +183,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 card-large">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-success-emphasis">Team</strong>
